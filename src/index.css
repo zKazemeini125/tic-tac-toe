@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: 600;
+  src: url(./assets/Oswald-SemiBold.ttf) format("ttf");
+  src: url(./assets/Oswald-VariableFont_wght.ttf) format("ttf");
+}
