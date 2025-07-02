@@ -1,0 +1,5 @@
+.modalFram {
+    justify-self: start;
+    width: 100%;
+    display: flex;
+}

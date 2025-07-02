@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import { FaO, FaXmark } from "react-icons/fa6";
 import { IconContext } from "react-icons";
+import Startup from "./startup/Startup";
 //import { FaWindowClose } from "react-icons/fa";
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
       if (i === "x")
         return (
           <>
+          <Startup></Startup>
             <IconContext.Provider value={{ color: "#FF4500" }}>
               <div>
                 <FaXmark key={idx} />
