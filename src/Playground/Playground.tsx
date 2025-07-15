@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { IconContext } from 'react-icons';
 import { FaO, FaXmark } from 'react-icons/fa6';
-import Startup from '../startup/Startup';
 
 function Playground() {
 
@@ -9,9 +8,6 @@ function Playground() {
   const [turn, setTurn] = useState<"x" | "o">("x");
   const [winner, setWinner] = useState<string>("");
   const [isGameOver, setGameOver] = useState(false);
-  const [XPlayerName, setXPlayerName]=useState(null);
-  const [OPlayerNmae,setOPlayerName]=useState(null);
-  const [visibleStartup, setvisbleStartup]=useState(true);
 
   useEffect(() => {
     calculateWinner(items); // پس از هر بار تغییر items برنده بازی محاسبه شود
@@ -82,7 +78,6 @@ function Playground() {
   return (
     <>
       <div className="container mx-auto lg:px-44">
-        {visibleStartup && <Startup></Startup>}
         <div className="grid grid-rows-7">
           <IconContext.Provider
             value={{
